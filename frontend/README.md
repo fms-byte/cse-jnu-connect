@@ -7,8 +7,11 @@ frontend/
 ├── app/                    # App Router structure
 │   ├── (pages)/            # Pages
 │   │   ├── alumni/         # Alumni Page
+│   │   ├── auth/           # Auth Pages
+│   │   │   ├── login/      # Login Page
+│   │   │   └── register/   # Register Page
 │   │   ├── contributors/   # Contributors Page
-│   │   └── achievements/   # Achievements Page
+│   │   ├── achievements/   # Achievements Page
 │   ├── api/                # API Routes
 │   │   └── auth.ts         # Auth API
 │   │   └── users.ts        # Users API
@@ -44,3 +47,5 @@ frontend/
 │   └── fonts/              # Fonts
 │
 ```
+
+## Environment Setup: Copy and rename `example.env` to `.env` and fill in the values.
