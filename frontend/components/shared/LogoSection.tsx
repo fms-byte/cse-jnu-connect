@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function LogoSection() {
   return (
-    <div>
+    <Link href={"/"}>
       <Image
         src="/images/logo.png"
         alt="link error"
@@ -10,6 +11,6 @@ export default function LogoSection() {
         height={25}
         title="CSE JnU Logo"
       ></Image>
-    </div>
+    </Link>
   );
 }

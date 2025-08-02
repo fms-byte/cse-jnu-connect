@@ -21,9 +21,10 @@ export default function Navbar({
           key={index}
           href={item.url}
           className={clsx(
-            "flex  w-full text-center justify-center items-center gap-1",
+            "flex  w-full text-center justify-center items-center gap-1 text-[15px]",
             {
-              "text-rose-600 text-2xl font-bold": pathName === item.url,
+              "text-rose-500   border border-rose-500 rounded-sm p-1":
+                pathName === item.url,
               "text-neutral-600": pathName != item.url,
             }
           )}
@@ -33,7 +34,7 @@ export default function Navbar({
           // }}
         >
           <item.icon
-            className={clsx("w-8", {
+            className={clsx("w-5", {
               "text-rose-600": pathName === item.url,
             })}
           />

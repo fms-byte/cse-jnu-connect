@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import { ArrowRightIcon } from "lucide-react";
 
 type MobileMenuProps = {
   mobileNavIsVisible: boolean;
@@ -24,7 +25,11 @@ export default function SignInUp({
         asChild
         // onClick={()=>setMobileNavIsVisible(false)}
       >
-        <Link href="/auth/login">Sign In</Link>
+        <Link href="/auth/login">
+        <span>
+          <ArrowRightIcon/>
+        </span>
+        Sign In</Link>
       </Button>
       <Button
         variant="default"

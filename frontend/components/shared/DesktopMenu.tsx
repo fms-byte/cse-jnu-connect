@@ -12,12 +12,16 @@ export default function DesktopMenu({
   setMobileNavIsVisible,
 }: MobileMenuProps) {
   return (
-    <div className="hidden md:flex items-center gap-4 w-full p-2 md:justify-between">
+    <div className="hidden md:flex items-center gap-4 w-full p-1 md:justify-between">
       <LogoSection />
-      <Navbar  mobileNavIsVisible={mobileNavIsVisible}
-        setMobileNavIsVisible={setMobileNavIsVisible} />
-      <SignInUp  mobileNavIsVisible={mobileNavIsVisible}
-        setMobileNavIsVisible={setMobileNavIsVisible} />
+      <Navbar
+        mobileNavIsVisible={mobileNavIsVisible}
+        setMobileNavIsVisible={setMobileNavIsVisible}
+      />
+      <SignInUp
+        mobileNavIsVisible={mobileNavIsVisible}
+        setMobileNavIsVisible={setMobileNavIsVisible}
+      />
     </div>
   );
 }
