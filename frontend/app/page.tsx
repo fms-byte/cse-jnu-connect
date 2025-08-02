@@ -1,14 +1,20 @@
-import { Button } from '@/components/ui/button'
-import React from 'react'
+import AboutSection from "@/components/shared/AboutSection";
+import CTASection from "@/components/shared/CTASection";
+import FeatureSection from "@/components/shared/FeatureSection";
+import Footer from "@/components/shared/Footer";
+import HeroSection from "@/components/shared/HeroSection";
+import React from "react";
 
 const Home = () => {
   return (
-    <div className='flex flex-col items-center justify-center h-screen'>
-      <h1 className='text-4xl font-bold'>Welcome to CSE-JNU Connect</h1>
-      <p className='text-lg mt-4'>A community platform for CSE-JNU students!</p>
-      <Button color='#abdfed'>Click me to learn more....</Button>
+    <div className="flex flex-col items-center justify-center min-h-screen">
+      <HeroSection />
+      <AboutSection />
+      <FeatureSection />
+      <CTASection />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
