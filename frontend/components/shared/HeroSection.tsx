@@ -2,7 +2,7 @@ export default function HeroSection() {
   return (
     <div
       id="hero"
-      className="w-full p-5 mt-5"
+      className="w-full p-5 mt-30"
     >
       <section>
         <h1 className="w-full sm:w-1/2 text-3xl sm:text-4xl md:text-5xl font-bold">
